@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acerca de Mí</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        .grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            max-width: 800px;
+            justify-content: center;
+        }
+        .item {
+            width: 45%;
+            background: white;
+            padding: 20px;
+            text-align: center;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s;
+        }
+        .item:hover {
+            transform: scale(1.05);
+        }
+        @media (max-width: 600px) {
+            .item {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Acerca de Mí</h1>
+    <div class="grid">
+        <div class="item" ondblclick="this.style.backgroundColor = '#D4A5A5'">
+            <h3>Persona a quien admiro</h3>
+            <p>Persona que admiro es Messi</p>
+        <div class="item" ondblclick="this.style.backgroundColor = '#D4A5A5'">
+            <h3>Meta que quiero lograr a futuro</h3>
+            <p>Meta que quiero lograr a futuro es ser ingeniero en sistemas</p>
+        </div>
+        <div class="item" onmouseover="this.style.color = 'blue'" onmouseout="this.style.color = 'black'">
+            <h3>Género musical favorito</h3>
+            <p>Mi genero muscial favorito es: electronica</p>
+        </div>
+        <div class="item" onmousedown="this.style.fontSize = '22px'" onmouseup="this.style.fontSize = '18px'">
+            <h3>Algo sin lo que no podría vivir</h3>
+            <p>Algo con lo que no puedo vivir seria el oxigeno</p>
+        </div>
+        <div class="item" onfocus="this.style.border = '2px solid red'" tabindex="0">
+            <h3>Un talento que poseo</h3>
+            <p>Mi talento podria ser el futbol</p>
+        </div>
+        <div class="item" onwheel="this.style.backgroundColor = '#A5D4A5'">
+            <h3>Mi animal favorito</h3>
+            <p>Mi animal favorito es el perro</p>
+        </div>
+    </div>
+</body>
+</html>
